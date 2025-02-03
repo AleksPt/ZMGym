@@ -1,10 +1,3 @@
-//
-//  Colors.swift
-//  Plinko
-//
-//  Created by Алексей on 03.02.2025.
-//
-
 import SwiftUI
 
 enum AppColors {
@@ -16,13 +9,13 @@ enum AppColors {
     var color: Color {
         switch self {
         case .black:
-            Color(._212121)
+            Color("212121")
         case .sandy:
-            Color(.F_3_F_277)
+            Color("F3F277")
         case .white:
-            Color(.FFFFFF)
+            Color("FFFFFF")
         case .gray:
-            Color(.E_1_E_1_E_1)
+            Color("E1E1E1")
         }
     }
 }

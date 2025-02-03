@@ -1,10 +1,3 @@
-//
-//  Images.swift
-//  Plinko
-//
-//  Created by Алексей on 03.02.2025.
-//
-
 import SwiftUI
 
 enum AppImages {
