@@ -1,13 +1,13 @@
 import Foundation
 
-enum Labels {
+enum AppLabels {
     
     enum Buttons {
-        static let next = "next"
-        static let back = "back"
-        static let check = "check"
-        static let checkAddress = "check address"
-        static let reserve = "reserve"
+        static let next = "next".uppercased()
+        static let back = "back".uppercased()
+        static let check = "check".uppercased()
+        static let checkAddress = "check address".uppercased()
+        static let reserve = "reserve".uppercased()
     }
     
     enum Screens {
