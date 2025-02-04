@@ -141,7 +141,7 @@ enum AppLabels {
             }
             
             enum Schedule {
-                static let title = "Your\nschedule"
+                static let title = "Your schedule"
                 static let subtitle = "check your training schedule"
                 
                 static let timePractice = "practice at 7 pm"

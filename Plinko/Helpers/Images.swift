@@ -3,9 +3,10 @@ import SwiftUI
 enum AppImages {
     static let qr = Image(.qr).resizable()
     static let pattern = Image(.pattern).resizable()
-    static let notepad = Image(.notepad).resizable()
-    static let girlWhite = Image(.girlWhite).resizable()
-    static let girlBlue = Image(.girlBlue).resizable()
+    static let patternYellow = Image(.patternYellow).resizable()
+    static let yoga = Image(.yoga).resizable()
+    static let schedule = Image(.schedule).resizable()
+    static let gym = Image(.gym).resizable()
     
     enum Onboarding {
         static let img1 = Image(.onboarding1).resizable()
