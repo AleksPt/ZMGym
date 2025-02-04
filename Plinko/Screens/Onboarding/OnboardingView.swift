@@ -25,8 +25,6 @@ struct OnboardingView: View {
                                         .foregroundStyle(AppColors.sandy.color)
                                     Text(item.subtitle.uppercased())
                                         .font(.custom(AppFonts.poppinsRegular.name, size: 15))
-                                        .minimumScaleFactor(0.5)
-                                        .lineLimit(2)
                                         .foregroundStyle(.white)
                                 }
                                 
@@ -45,7 +43,6 @@ struct OnboardingView: View {
                     selection: $selectionTab,
                     numberOfTabs: viewModel.onboardingData.count
                 )
-                .animation(.default, value: selectionTab)
                 
                 NavButton(title: AppLabels.Buttons.next) {
                     withAnimation {
@@ -64,21 +61,4 @@ struct OnboardingView: View {
 
 #Preview {
     OnboardingView()
-}
-
-struct CustomPageTabView: View {
-    @Binding var selection: Int
-    let numberOfTabs: Int
-
-    var body: some View {
-            HStack {
-                ForEach(0..<numberOfTabs, id: \.self) { index in
-                    RoundedRectangle(cornerRadius: 2)
-                        .fill(AppColors.sandy.color)
-                        .opacity(index == selection ? 1 : 0.1)
-                        .frame(width: 18, height: 18)
-                }
-            }
-            .padding(.top, 10)
-    }
 }
