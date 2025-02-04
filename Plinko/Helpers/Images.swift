@@ -1,12 +1,20 @@
 import SwiftUI
 
 enum AppImages {
+    static let background = Image(.background).resizable()
     static let qr = Image(.qr).resizable()
     static let pattern = Image(.pattern).resizable()
     static let patternYellow = Image(.patternYellow).resizable()
     static let yoga = Image(.yoga).resizable()
     static let schedule = Image(.schedule).resizable()
     static let gym = Image(.gym).resizable()
+    
+    enum Tab {
+        static let home = Image(.homeTabActive)
+        static let classes = Image(.classesTabActive)
+        static let sportbar = Image(.sportbarTabActive)
+        static let profile = Image(.profileTabActive)
+    }
     
     enum Onboarding {
         static let img1 = Image(.onboarding1).resizable()

@@ -6,6 +6,8 @@ enum AppColors {
     case white
     case lightGray
     case darkGray
+    case softPink
+    case purple
     
     var color: Color {
         switch self {
@@ -19,6 +21,10 @@ enum AppColors {
             Color("E1E1E1")
         case .darkGray:
             Color("2A292A")
+        case .softPink:
+            Color("E2CCFF")
+        case .purple:
+            Color("9747FF")
         }
     }
 }
