@@ -35,7 +35,6 @@ struct NavButton: View {
                 )
                 .clipped()
         }
-        .buttonStyle(.plain)
     }
 }
 

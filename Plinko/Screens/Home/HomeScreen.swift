@@ -3,7 +3,7 @@ import SwiftUI
 struct HomeScreen: View {
     @StateObject private var viewModel = HomeViewModel()
     @State private var selectionTab = 0
-    
+    @State private var isPresentedOfferDetailScreen = false
     var body: some View {
         ZStack {
             BackgroundView()
@@ -29,8 +29,15 @@ struct HomeScreen: View {
                 TabView(selection: $selectionTab) {
                     ForEach(viewModel.offers.indices, id: \.self) { index in
                         let item = viewModel.offers[index]
+                        
                         item.image
                             .scaledToFit()
+                            .onTapGesture {
+                                isPresentedOfferDetailScreen = true
+                            }
+                        .fullScreenCover(isPresented: $isPresentedOfferDetailScreen) {
+                            OfferDetailScreen(offer: item)
+                        }
                     }
                     .padding(.horizontal)
                 }
