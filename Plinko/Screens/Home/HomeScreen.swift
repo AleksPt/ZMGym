@@ -9,19 +9,10 @@ struct HomeScreen: View {
             BackgroundView()
             
             VStack {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(AppLabels.Screens.Home.title.uppercased())
-                            .font(.custom(AppFonts.poppinsSemiBold.name, size: 35))
-                        Text(AppLabels.Screens.Home.titleDescription.uppercased())
-                            .font(.custom(AppFonts.poppinsRegular.name, size: 20))
-                    }
-                    .foregroundStyle(.white)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5)
-                    
-                    Spacer()
-                }
+                ScreenHeaderView(
+                    title: AppLabels.Screens.Home.title,
+                    subtitle: AppLabels.Screens.Home.titleDescription
+                )
                 .padding(.horizontal)
                 
                 Spacer()
@@ -35,9 +26,9 @@ struct HomeScreen: View {
                             .onTapGesture {
                                 isPresentedOfferDetailScreen = true
                             }
-                        .fullScreenCover(isPresented: $isPresentedOfferDetailScreen) {
-                            OfferDetailScreen(offer: item)
-                        }
+                            .fullScreenCover(isPresented: $isPresentedOfferDetailScreen) {
+                                OfferDetailScreen(offer: item)
+                            }
                     }
                     .padding(.horizontal)
                 }

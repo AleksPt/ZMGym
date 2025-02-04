@@ -31,6 +31,8 @@ struct NavButton: View {
                 .overlay(
                     Text(title)
                         .font(.custom(AppFonts.poppinsSemiBold.name, size: 40))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                         .foregroundStyle(AppColors.black.color)
                 )
                 .clipped()
