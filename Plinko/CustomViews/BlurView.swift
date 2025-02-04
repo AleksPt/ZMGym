@@ -1,10 +1,3 @@
-//
-//  BlurView.swift
-//  Plinko
-//
-//  Created by Алексей on 04.02.2025.
-//
-
 import SwiftUI
 
 struct BlurView: UIViewRepresentable {

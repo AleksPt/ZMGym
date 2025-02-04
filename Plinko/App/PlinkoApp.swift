@@ -4,7 +4,7 @@ import SwiftUI
 struct PlinkoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
         }
     }
 }

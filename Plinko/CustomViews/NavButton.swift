@@ -15,35 +15,36 @@ struct NavButton: View {
                     ZStack {
                         AppImages.pattern
                             .resizable()
-                            .scaledToFill()
-                            .blendMode(.overlay)
                             .rotationEffect(.degrees(25))
-                            .scaleEffect(0.6)
-                            .offset(x: -AppSizes.screenWidth * 0.2, y: -15)
+                            .scaleEffect(0.65)
+                            .offset(x: -AppSizes.screenWidth * 0.125, y: -5)
                         AppImages.pattern
                             .resizable()
-                            .scaledToFill()
-                            .blendMode(.overlay)
                             .rotationEffect(.degrees(110))
-                            .scaleEffect(0.6)
-                            .offset(x: AppSizes.screenWidth * 0.35, y: 5)
+                            .scaleEffect(0.65)
+                            .offset(x: AppSizes.screenWidth * 0.30, y: 5)
                     }
+                        .scaledToFill()
+                        .blendMode(.overlay)
                 )
+                .clipShape(Capsule())
                 .overlay(
                     Text(title)
-                        .font(.custom(AppFonts.poppinsBlack.name, size: 40))
+                        .font(.custom(AppFonts.poppinsSemiBold.name, size: 40))
                         .foregroundStyle(AppColors.black.color)
                 )
                 .clipped()
         }
-
+        .buttonStyle(.plain)
     }
 }
 
 #Preview {
     ZStack {
-        Color.black
+        BackgroundView()
             .ignoresSafeArea()
         NavButton(title: AppLabels.Buttons.next) {}
+            .padding(.horizontal, 50)
+            .offset(y: 100)
     }
 }
