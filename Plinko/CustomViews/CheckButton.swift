@@ -13,13 +13,13 @@ struct CheckButton: View {
         Button {
             action()
         } label: {
-            Capsule()
-                .frame(height: 41)
+            RoundedRectangle(cornerRadius: 17.5)
+                .frame(width: 150, height: 41)
                 .foregroundStyle(forSchedule ? AppColors.black.color : AppColors.sandy.color)
                 .overlay(
                     Text(AppLabels.Buttons.check)
-                        .foregroundStyle(forSchedule ? AppColors.white.color : AppColors.black.color)
-                        .font(.custom(AppFonts.poppinsSemiBold.name, size: 32))
+                        .foregroundStyle(forSchedule ? AppColors.lightGray.color : AppColors.black.color)
+                        .font(.custom(AppFonts.poppinsSemiBold.name, size: 25))
                 )
         }
 

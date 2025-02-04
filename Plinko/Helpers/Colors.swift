@@ -4,7 +4,8 @@ enum AppColors {
     case black
     case sandy
     case white
-    case gray
+    case lightGray
+    case darkGray
     
     var color: Color {
         switch self {
@@ -14,8 +15,10 @@ enum AppColors {
             Color("F3F277")
         case .white:
             Color("FFFFFF")
-        case .gray:
+        case .lightGray:
             Color("E1E1E1")
+        case .darkGray:
+            Color("2A292A")
         }
     }
 }
