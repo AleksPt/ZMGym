@@ -2,6 +2,7 @@ import SwiftUI
 import MapKit
 
 struct AddressScreen: View {
+    @Environment(\.dismiss) var dismiss
     @StateObject private var viewModel = AddressViewModel()
 
     var body: some View {
@@ -29,8 +30,15 @@ struct AddressScreen: View {
                 
                 Text(viewModel.landmark.name.uppercased())
                     .foregroundStyle(.white)
+                    .font(.custom(AppFonts.poppinsSemiBold.name, size: 25))
+                    .lineLimit(3)
+                    .minimumScaleFactor(0.5)
                 
                 Spacer()
+                
+                NavButton(title: AppLabels.Buttons.back) {
+                    dismiss()
+                }
 
             }
             .padding(.horizontal)
