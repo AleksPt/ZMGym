@@ -22,7 +22,7 @@ struct SportbarView: View {
                     subtitle: AppLabels.Screens.SportBar.subtitle
                 )
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     LazyVGrid(columns: columns, spacing: 10) {
                         Section(
                             header: HStack {
@@ -83,8 +83,6 @@ struct SportbarView: View {
                         }
                     }
                 }
-                
-                Spacer()
             }
             .padding(.horizontal)
         }

@@ -33,7 +33,7 @@ struct HomeView: View {
                     .padding(.horizontal)
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-                .frame(height: AppSizes.screenHeight / 1.75)
+                .frame(height: AppSizes.screenHeight / 2)
                 
                 CustomPageTabView(selection: $selectionTab, numberOfTabs: viewModel.offers.count)
                 
@@ -55,6 +55,7 @@ struct HomeView: View {
                 }
                 .padding(.horizontal)
             }
+            .padding(.bottom)
         }
     }
 }

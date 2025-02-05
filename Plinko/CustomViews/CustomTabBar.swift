@@ -20,7 +20,7 @@ enum Tab {
     }
 }
 
-struct TabBar: View {
+struct CustomTabBar: View {
     @Binding var currentView: Tab
     
     var body: some View {
