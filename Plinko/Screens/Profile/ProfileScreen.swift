@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ProfileScreen: View {
+    @State private var isPresentedAddressScreen = false
+    
     var body: some View {
         ZStack {
             BackgroundView()
@@ -28,10 +30,13 @@ struct ProfileScreen: View {
                 Spacer()
                 
                 NavButton(title: AppLabels.Buttons.checkAddress) {
-                    
+                    isPresentedAddressScreen = true
                 }
             }
             .padding(.horizontal)
+        }
+        .fullScreenCover(isPresented: $isPresentedAddressScreen) {
+            AddressScreen()
         }
     }
 }

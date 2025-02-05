@@ -225,8 +225,8 @@ enum AppLabels {
             static let subtitle = "Don't forget your QR code"
             static let scan = "Scan the QR in the hall"
             static let address = """
-            "123 Maple Avenue, Apt. 56\n
-            Los Angeles, CA 90012\n
+            "123 Maple Avenue, Apt. 56
+            Los Angeles, CA 90012
             United States
             """
         }
