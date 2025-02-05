@@ -6,6 +6,10 @@
 	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FA2F58222D53B3BE00D7D998 /* BottomSheets in Frameworks */ = {isa = PBXBuildFile; productRef = FA2F58212D53B3BE00D7D998 /* BottomSheets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FABF4C852D50A276007AC81F /* Plinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2F58222D53B3BE00D7D998 /* BottomSheets in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,7 @@
 			);
 			name = Plinko;
 			packageProductDependencies = (
+				FA2F58212D53B3BE00D7D998 /* BottomSheets */,
 			);
 			productName = Plinko;
 			productReference = FABF4C852D50A276007AC81F /* Plinko.app */;
@@ -101,6 +107,9 @@
 			);
 			mainGroup = FABF4C7C2D50A276007AC81F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FA2F58202D53B3BE00D7D998 /* XCRemoteSwiftPackageReference "BottomSheets" */,
+			);
 			productRefGroup = FABF4C862D50A276007AC81F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA2F58202D53B3BE00D7D998 /* XCRemoteSwiftPackageReference "BottomSheets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/c-villain/BottomSheets";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA2F58212D53B3BE00D7D998 /* BottomSheets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA2F58202D53B3BE00D7D998 /* XCRemoteSwiftPackageReference "BottomSheets" */;
+			productName = BottomSheets;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FABF4C7D2D50A276007AC81F /* Project object */;
 }

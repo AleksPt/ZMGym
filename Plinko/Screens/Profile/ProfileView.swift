@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ProfileScreen: View {
+struct ProfileView: View {
     @State private var isPresentedAddressScreen = false
     
     var body: some View {
@@ -36,11 +36,11 @@ struct ProfileScreen: View {
             .padding(.horizontal)
         }
         .fullScreenCover(isPresented: $isPresentedAddressScreen) {
-            AddressScreen()
+            AddressView()
         }
     }
 }
 
 #Preview {
-    ProfileScreen()
+    ProfileView()
 }

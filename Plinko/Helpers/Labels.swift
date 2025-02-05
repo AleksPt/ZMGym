@@ -162,16 +162,14 @@ enum AppLabels {
         enum SportBar {
             static let title = "check out the range"
             static let subtitle = "and come to the gym for them"
-            static let note = "*this page is for informational purposes only. all purchases are made exclusively offline."
+            static let note = "*this page is for informational purposes only.\nall purchases are made exclusively offline."
             
             enum Food {
                 static let title = "Food"
                 
                 enum WheyProtein {
                     static let title = "whey protein"
-                    static let description = """
-                     – A premium-quality whey protein blend designed to support muscle recovery and growth. Packed with essential amino acids and fast-absorbing protein, it helps enhance post-workout recovery, boost strength, and promote lean muscle development. Ideal for athletes, fitness enthusiasts, and anyone looking to meet their daily protein needs. Available in a variety of delicious flavors for a great-tasting experience.
-                    """
+                    static let description = " – A premium-quality whey protein blend designed to support muscle recovery and growth. Packed with essential amino acids and fast-absorbing protein, it helps enhance post-workout recovery, boost strength, and promote lean muscle development. Ideal for athletes, fitness enthusiasts, and anyone looking to meet their daily protein needs. Available in a variety of delicious flavors for a great-tasting experience."
                 }
                 
                 enum Ceratine {
