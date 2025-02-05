@@ -2,7 +2,8 @@ import SwiftUI
 
 struct OnboardingView: View {
     @StateObject private var viewModel = OnboardingViewModel()
-    @State private var selectionTab = 1
+    @State private var selectionTab = 0
+    @State private var isOpenMainView = false
     
     var body: some View {
         ZStack {
@@ -49,11 +50,17 @@ struct OnboardingView: View {
                         if selectionTab < viewModel.onboardingData.count - 1 {
                             selectionTab += 1
                         } else {
-                            selectionTab = 0
+                            isOpenMainView = true
                         }
                     }
                 }
-                .padding()
+                .padding()                
+                
+                NavigationLink(
+                    destination: MainView(),
+                    isActive: $isOpenMainView) {
+                        EmptyView()
+                    }
             }
         }
     }
