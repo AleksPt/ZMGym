@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeScreen: View {
+struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     @State private var selectionTab = 0
     @State private var isPresentedOfferDetailScreen = false
@@ -60,5 +60,5 @@ struct HomeScreen: View {
 }
 
 #Preview {
-    HomeScreen()
+    HomeView()
 }

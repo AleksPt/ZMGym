@@ -1,7 +1,7 @@
 import SwiftUI
 import MapKit
 
-struct AddressScreen: View {
+struct AddressView: View {
     @Environment(\.dismiss) var dismiss
     @StateObject private var viewModel = AddressViewModel()
 
@@ -47,5 +47,5 @@ struct AddressScreen: View {
 }
 
 #Preview {
-    AddressScreen()
+    AddressView()
 }

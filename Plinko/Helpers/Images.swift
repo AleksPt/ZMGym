@@ -27,6 +27,10 @@ enum AppImages {
         static let creatine = Image(.creatine).resizable()
         static let proteinBars = Image(.proteinBars).resizable()
         static let wheyProtein = Image(.wheyProtein).resizable()
+        
+        static let creatineGrid = Image(.creatineGrid).resizable()
+        static let proteinBarsGrid = Image(.proteinBarsGrid).resizable()
+        static let wheyProteinGrid = Image(.wheyProteinGrid).resizable()
     }
     
     enum Equipment {
@@ -36,6 +40,13 @@ enum AppImages {
         static let kettlebel = Image(.kettlebel).resizable()
         static let redGymBall = Image(.redGymBall).resizable()
         static let yellowGymBall = Image(.yellowGymBall).resizable()
+        
+        static let blueGymBallGrid = Image(.blueGymBallGrid).resizable()
+        static let elasticBandGrid = Image(.elasticBandGrid).resizable()
+        static let gymMatGrid = Image(.gymMatGrid).resizable()
+        static let kettlebelGrid = Image(.kettlebelGrid).resizable()
+        static let redGymBallGrid = Image(.redGymBallGrid).resizable()
+        static let yellowGymBallGrid = Image(.yellowGymBallGrid).resizable()
     }
     
     enum Offer {
