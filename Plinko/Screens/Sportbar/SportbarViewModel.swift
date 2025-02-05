@@ -1,6 +1,6 @@
 import Foundation
 
 final class SportbarViewModel: ObservableObject {
-    var foods: [FoodModel] = FoodModel.generatedMockData()
-    var equipments: [EquipmentModel] = EquipmentModel.generatedMockData()
+    let foods: [SportBarModel] = FoodModel.generatedMockData()
+    let equipments: [SportBarModel] = EquipmentModel.generatedMockData()
 }

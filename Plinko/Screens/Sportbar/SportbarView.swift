@@ -1,8 +1,12 @@
 import SwiftUI
+import BottomSheets
 
 struct SportbarView: View {
     @StateObject private var viewModel = SportbarViewModel()
-    let columns = [
+    @State private var isPresentedBottomSheet = false
+    @State private var selectedFoodItem: SportBarModel? = nil
+    
+    private let columns = [
             GridItem(.flexible()),
             GridItem(.flexible()),
             GridItem(.flexible())
@@ -30,10 +34,20 @@ struct SportbarView: View {
                             }
                         ) {
                             ForEach(viewModel.foods) { item in
+                                                                
                                 Button {
-                                    
+                                    selectedFoodItem = item
+                                    isPresentedBottomSheet = true
                                 } label: {
                                     item.smallImage.scaledToFit()
+                                }
+                                .bottomSheet(
+                                    isPresented: $isPresentedBottomSheet,
+                                    [.fraction(0.9)]
+                                ) {
+                                    SportBarDetail(sportbarData: selectedFoodItem)
+                                        .bPresentationBackground(Color.black)
+                                        .bPresentationCornerRadius(40)
                                 }
                             }
                         }
@@ -50,10 +64,20 @@ struct SportbarView: View {
                             }
                         ) {
                             ForEach(viewModel.equipments) { item in
+                                
                                 Button {
-                                    
+                                    selectedFoodItem = item
+                                    isPresentedBottomSheet = true
                                 } label: {
                                     item.smallImage.scaledToFit()
+                                }
+                                .bottomSheet(
+                                    isPresented: $isPresentedBottomSheet,
+                                    [.fraction(0.9)]
+                                ) {
+                                    SportBarDetail(sportbarData: selectedFoodItem)
+                                        .bPresentationBackground(Color.black)
+                                        .bPresentationCornerRadius(40)
                                 }
                             }
                         }
