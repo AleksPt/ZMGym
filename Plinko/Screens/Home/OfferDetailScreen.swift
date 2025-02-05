@@ -3,10 +3,15 @@ import SwiftUI
 struct OfferDetailScreen: View {
     @Environment(\.dismiss) var dismiss
     let offer: OfferModel
+    private let highlightedWords = AppLabels.Screens.Home.Offers.highlightedWords
     
     var body: some View {
         let countFooterImage = offer.detailFooterImages.count
-        
+        let formattedText = createFormattedText(
+            from: offer.description,
+            highlightedWords: highlightedWords
+        )
+
         ZStack {
             BackgroundView()
             
@@ -22,9 +27,9 @@ struct OfferDetailScreen: View {
                         offer.detailCoverImage
                             .scaledToFit()
                         
-                        Text(offer.description)
-                            .font(.custom(AppFonts.poppinsLight.name, size: 15))
+                        formattedText
                             .foregroundStyle(.white)
+                            .font(.custom(AppFonts.poppinsLight.name, size: 15))
                         
                         if countFooterImage == 1 {
                             offer.detailFooterImages[0].scaledToFit()
@@ -48,19 +53,43 @@ struct OfferDetailScreen: View {
             .padding(.horizontal)
         }
     }
+    
+    private func createFormattedText(
+        from text: String,
+        highlightedWords: [String]
+    ) -> Text {
+        var formattedText = Text("")
+        var currentText = text
+        
+        for word in highlightedWords {
+            if let range = currentText.range(of: word) {
+                let before = String(currentText[..<range.lowerBound])
+                formattedText = formattedText + Text(before)
+                
+                let highlighted = String(currentText[range])
+                formattedText = formattedText + Text(highlighted).font(.custom(AppFonts.poppinsRegular.name, size: 20))
+                
+                currentText = String(currentText[range.upperBound...])
+            }
+        }
+        
+        formattedText = formattedText + Text(currentText)
+        
+        return formattedText
+    }
 }
 
 #Preview {
     OfferDetailScreen(
         offer: OfferModel(
-            image: AppImages.Offer.offer4,
-            title: AppLabels.Screens.Home.Offers.Offer4.title,
-            description: AppLabels.Screens.Home.Offers.Offer4.description,
-            detailCoverImage: AppImages.Offer.Detail.Offer4.cover,
+            image: AppImages.Offer.offer2,
+            title: AppLabels.Screens.Home.Offers.Offer2.title,
+            description: AppLabels.Screens.Home.Offers.Offer2.description,
+            detailCoverImage: AppImages.Offer.Detail.Offer2.cover,
             detailFooterImages: [
-                AppImages.Offer.Detail.Offer4.footer1,
-                AppImages.Offer.Detail.Offer4.footer2,
-                AppImages.Offer.Detail.Offer4.footer3
+                AppImages.Offer.Detail.Offer2.footer1,
+                AppImages.Offer.Detail.Offer2.footer2,
+                AppImages.Offer.Detail.Offer2.footer3
             ]
         )
     )
