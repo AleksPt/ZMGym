@@ -41,6 +41,29 @@ enum AppLabels {
             static let subtitleDescription = "Check your schedule for the week!"
             
             enum Offers {
+                static let highlightedWords = [
+                    "1. Whey Protein",
+                    "2. Creatine",
+                    "3. Caffeine",
+                    "4. L-Carnitine",
+                    "5. Branched-Chain Amino Acids (BCAAs)",
+                    "6. Green Tea Extract",
+                    "What You Can Expect:",
+                    "Opening Day Specials:",
+                    "Location: 325 Willow Avenue, Downtown Heights",
+                    "Opening Date: February 10, 2025",
+                    "For more details, check our ap.",
+                    "1. Pull-Ups (4 sets, max reps)",
+                    "2. Deadlifts (4 sets, 6-8 reps)",
+                    "3. Lat Pulldown (4 sets, 10-12 reps)",
+                    "4. Bent-Over Rows (4 sets, 8-10 reps)",
+                    "5. Face Pulls (3 sets, 12-15 reps)\n",
+                    "6. Hyperextensions (3 sets, 12 reps)",
+                    "Benefits of Martial Arts for Women:",
+                    "Best Martial Arts Styles for Women:",
+                    "Getting Started:",
+                ]
+                
                 enum Offer1 {
                     static let title = "Best Supplements for Gym"
                     
@@ -99,7 +122,7 @@ enum AppLabels {
                     The lat pulldown machine mimics the movement of pull-ups while allowing for adjustable resistance. This exercise helps develop width in the back.
                     4. Bent-Over Rows (4 sets, 8-10 reps)
                     This movement strengthens the mid-back and improves overall pulling strength. It can be performed with a barbell or dumbbells.
-                    5. Face Pulls (3 sets, 12-15 reps)\n
+                    5. Face Pulls (3 sets, 12-15 reps)
                     Face pulls target the upper traps and rear delts, promoting shoulder health and stability. This exercise is especially useful for those who spend long hours sitting or working at a desk.
                     6. Hyperextensions (3 sets, 12 reps)
                     Strengthening the lower back is crucial for preventing injuries and improving posture. Hyperextensions engage the erector spinae muscles, which support the spine.
