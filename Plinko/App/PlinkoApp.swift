@@ -4,7 +4,9 @@ import SwiftUI
 struct PlinkoApp: App {
     var body: some Scene {
         WindowGroup {
-            SportbarView()
+            NavigationView {
+                OnboardingView()
+            }
         }
     }
 }

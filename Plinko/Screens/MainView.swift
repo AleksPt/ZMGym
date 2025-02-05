@@ -22,6 +22,7 @@ struct MainView: View {
                     CustomTabBar(currentView: $currentView)
                 }
             }
+            .navigationBarHidden(true)
     }
 }
 
