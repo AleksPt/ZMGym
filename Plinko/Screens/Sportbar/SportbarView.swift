@@ -2,15 +2,16 @@ import SwiftUI
 
 struct SportbarView: View {
     @StateObject private var viewModel = SportbarViewModel()
-    @State private var isPresentedBottomSheet = false
-    @State private var selectedFoodItem: SportBarModel? = nil
+    
+    @State private var selectedFoodItem: SportBarModel?
+    @State private var selectedEquipmentItem: SportBarModel?
     
     private let columns = [
-            GridItem(.flexible()),
-            GridItem(.flexible()),
-            GridItem(.flexible())
-        ]
-
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
         ZStack {
             BackgroundView()
@@ -33,16 +34,14 @@ struct SportbarView: View {
                             }
                         ) {
                             ForEach(viewModel.foods) { item in
-                                                                
                                 Button {
                                     selectedFoodItem = item
-                                    isPresentedBottomSheet = true
                                 } label: {
                                     item.smallImage.scaledToFit()
                                 }
-                                .sheet(isPresented: $isPresentedBottomSheet, content: {
-                                    SportBarDetail(sportbarData: selectedFoodItem)
-                                })
+                                .sheet(item: $selectedFoodItem) { item in
+                                    SportBarDetail(sportbarData: item)
+                                }
                             }
                         }
                         
@@ -58,16 +57,14 @@ struct SportbarView: View {
                             }
                         ) {
                             ForEach(viewModel.equipments) { item in
-                                
                                 Button {
-                                    selectedFoodItem = item
-                                    isPresentedBottomSheet = true
+                                    selectedEquipmentItem = item
                                 } label: {
                                     item.smallImage.scaledToFit()
                                 }
-                                .sheet(isPresented: $isPresentedBottomSheet, content: {
-                                    SportBarDetail(sportbarData: selectedFoodItem)
-                                })
+                                .sheet(item: $selectedEquipmentItem) { item in
+                                    SportBarDetail(sportbarData: item)
+                                }
                             }
                         }
                     }
