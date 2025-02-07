@@ -3,26 +3,100 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 63;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FAA9C4F22D56BF3F002D52FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D12D56BF3F002D52FC /* Preview Assets.xcassets */; };
+		FAA9C4F32D56BF3F002D52FC /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D32D56BF3F002D52FC /* Poppins-Black.ttf */; };
+		FAA9C4F42D56BF3F002D52FC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D42D56BF3F002D52FC /* Poppins-Light.ttf */; };
+		FAA9C4F52D56BF3F002D52FC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D52D56BF3F002D52FC /* Poppins-Regular.ttf */; };
+		FAA9C4F62D56BF3F002D52FC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D62D56BF3F002D52FC /* Poppins-SemiBold.ttf */; };
+		FAA9C4F72D56BF3F002D52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D82D56BF3F002D52FC /* Assets.xcassets */; };
+		FAA9C4F92D56BF3F002D52FC /* PlinkoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4B82D56BF3F002D52FC /* PlinkoApp.swift */; };
+		FAA9C4FA2D56BF3F002D52FC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4BA2D56BF3F002D52FC /* BackgroundView.swift */; };
+		FAA9C4FB2D56BF3F002D52FC /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4BB2D56BF3F002D52FC /* BlurView.swift */; };
+		FAA9C4FC2D56BF3F002D52FC /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4BC2D56BF3F002D52FC /* CheckButton.swift */; };
+		FAA9C4FD2D56BF3F002D52FC /* CustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4BD2D56BF3F002D52FC /* CustomDatePickerView.swift */; };
+		FAA9C4FE2D56BF3F002D52FC /* CustomPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4BE2D56BF3F002D52FC /* CustomPageTabView.swift */; };
+		FAA9C4FF2D56BF3F002D52FC /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4BF2D56BF3F002D52FC /* CustomTabBar.swift */; };
+		FAA9C5002D56BF3F002D52FC /* DateVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4C02D56BF3F002D52FC /* DateVeiw.swift */; };
+		FAA9C5012D56BF3F002D52FC /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4C12D56BF3F002D52FC /* NavButton.swift */; };
+		FAA9C5022D56BF3F002D52FC /* ScreenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4C22D56BF3F002D52FC /* ScreenHeaderView.swift */; };
+		FAA9C5032D56BF3F002D52FC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4C42D56BF3F002D52FC /* Colors.swift */; };
+		FAA9C5042D56BF3F002D52FC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4C52D56BF3F002D52FC /* Fonts.swift */; };
+		FAA9C5052D56BF3F002D52FC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4C62D56BF3F002D52FC /* Images.swift */; };
+		FAA9C5062D56BF3F002D52FC /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4C72D56BF3F002D52FC /* Labels.swift */; };
+		FAA9C5072D56BF3F002D52FC /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4C82D56BF3F002D52FC /* Sizes.swift */; };
+		FAA9C5082D56BF3F002D52FC /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4CA2D56BF3F002D52FC /* ClassModel.swift */; };
+		FAA9C5092D56BF3F002D52FC /* DateValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4CB2D56BF3F002D52FC /* DateValueModel.swift */; };
+		FAA9C50A2D56BF3F002D52FC /* LandmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4CC2D56BF3F002D52FC /* LandmarkModel.swift */; };
+		FAA9C50B2D56BF3F002D52FC /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4CD2D56BF3F002D52FC /* OfferModel.swift */; };
+		FAA9C50C2D56BF3F002D52FC /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4CE2D56BF3F002D52FC /* OnboardingModel.swift */; };
+		FAA9C50D2D56BF3F002D52FC /* SportBarModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4CF2D56BF3F002D52FC /* SportBarModels.swift */; };
+		FAA9C50E2D56BF3F002D52FC /* ClassesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4DA2D56BF3F002D52FC /* ClassesDetailView.swift */; };
+		FAA9C50F2D56BF3F002D52FC /* ClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4DB2D56BF3F002D52FC /* ClassesView.swift */; };
+		FAA9C5102D56BF3F002D52FC /* ReserveClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4DC2D56BF3F002D52FC /* ReserveClassView.swift */; };
+		FAA9C5112D56BF3F002D52FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4DE2D56BF3F002D52FC /* HomeView.swift */; };
+		FAA9C5122D56BF3F002D52FC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4DF2D56BF3F002D52FC /* HomeViewModel.swift */; };
+		FAA9C5132D56BF3F002D52FC /* OfferDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4E02D56BF3F002D52FC /* OfferDetailScreen.swift */; };
+		FAA9C5142D56BF3F002D52FC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4E22D56BF3F002D52FC /* OnboardingView.swift */; };
+		FAA9C5152D56BF3F002D52FC /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4E32D56BF3F002D52FC /* OnboardingViewModel.swift */; };
+		FAA9C5162D56BF3F002D52FC /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4E52D56BF3F002D52FC /* AddressView.swift */; };
+		FAA9C5172D56BF3F002D52FC /* AddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4E62D56BF3F002D52FC /* AddressViewModel.swift */; };
+		FAA9C5182D56BF3F002D52FC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4E72D56BF3F002D52FC /* ProfileView.swift */; };
+		FAA9C5192D56BF3F002D52FC /* SportBarDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4E92D56BF3F002D52FC /* SportBarDetail.swift */; };
+		FAA9C51A2D56BF3F002D52FC /* SportbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4EA2D56BF3F002D52FC /* SportbarView.swift */; };
+		FAA9C51B2D56BF3F002D52FC /* SportbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4EB2D56BF3F002D52FC /* SportbarViewModel.swift */; };
+		FAA9C51C2D56BF3F002D52FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9C4ED2D56BF3F002D52FC /* MainView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		FAA9C4B82D56BF3F002D52FC /* PlinkoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoApp.swift; sourceTree = "<group>"; };
+		FAA9C4BA2D56BF3F002D52FC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		FAA9C4BB2D56BF3F002D52FC /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		FAA9C4BC2D56BF3F002D52FC /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
+		FAA9C4BD2D56BF3F002D52FC /* CustomDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerView.swift; sourceTree = "<group>"; };
+		FAA9C4BE2D56BF3F002D52FC /* CustomPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageTabView.swift; sourceTree = "<group>"; };
+		FAA9C4BF2D56BF3F002D52FC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		FAA9C4C02D56BF3F002D52FC /* DateVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateVeiw.swift; sourceTree = "<group>"; };
+		FAA9C4C12D56BF3F002D52FC /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
+		FAA9C4C22D56BF3F002D52FC /* ScreenHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenHeaderView.swift; sourceTree = "<group>"; };
+		FAA9C4C42D56BF3F002D52FC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FAA9C4C52D56BF3F002D52FC /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FAA9C4C62D56BF3F002D52FC /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		FAA9C4C72D56BF3F002D52FC /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		FAA9C4C82D56BF3F002D52FC /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		FAA9C4CA2D56BF3F002D52FC /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
+		FAA9C4CB2D56BF3F002D52FC /* DateValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValueModel.swift; sourceTree = "<group>"; };
+		FAA9C4CC2D56BF3F002D52FC /* LandmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkModel.swift; sourceTree = "<group>"; };
+		FAA9C4CD2D56BF3F002D52FC /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
+		FAA9C4CE2D56BF3F002D52FC /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		FAA9C4CF2D56BF3F002D52FC /* SportBarModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBarModels.swift; sourceTree = "<group>"; };
+		FAA9C4D12D56BF3F002D52FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAA9C4D32D56BF3F002D52FC /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		FAA9C4D42D56BF3F002D52FC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		FAA9C4D52D56BF3F002D52FC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		FAA9C4D62D56BF3F002D52FC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAA9C4D82D56BF3F002D52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA9C4DA2D56BF3F002D52FC /* ClassesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesDetailView.swift; sourceTree = "<group>"; };
+		FAA9C4DB2D56BF3F002D52FC /* ClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesView.swift; sourceTree = "<group>"; };
+		FAA9C4DC2D56BF3F002D52FC /* ReserveClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveClassView.swift; sourceTree = "<group>"; };
+		FAA9C4DE2D56BF3F002D52FC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FAA9C4DF2D56BF3F002D52FC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FAA9C4E02D56BF3F002D52FC /* OfferDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailScreen.swift; sourceTree = "<group>"; };
+		FAA9C4E22D56BF3F002D52FC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		FAA9C4E32D56BF3F002D52FC /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		FAA9C4E52D56BF3F002D52FC /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		FAA9C4E62D56BF3F002D52FC /* AddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewModel.swift; sourceTree = "<group>"; };
+		FAA9C4E72D56BF3F002D52FC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FAA9C4E92D56BF3F002D52FC /* SportBarDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBarDetail.swift; sourceTree = "<group>"; };
+		FAA9C4EA2D56BF3F002D52FC /* SportbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportbarView.swift; sourceTree = "<group>"; };
+		FAA9C4EB2D56BF3F002D52FC /* SportbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportbarViewModel.swift; sourceTree = "<group>"; };
+		FAA9C4ED2D56BF3F002D52FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FAA9C4F02D56BF3F002D52FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABF4C852D50A276007AC81F /* Plinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FA3760B62D50DEB600ADDC77 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = FABF4C842D50A276007AC81F /* Plinko */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FABF4C872D50A276007AC81F /* Plinko */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (FA3760B62D50DEB600ADDC77 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Plinko; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FABF4C822D50A276007AC81F /* Frameworks */ = {
@@ -35,10 +109,172 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAA9C4B92D56BF3F002D52FC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4B82D56BF3F002D52FC /* PlinkoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAA9C4C32D56BF3F002D52FC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4BA2D56BF3F002D52FC /* BackgroundView.swift */,
+				FAA9C4BB2D56BF3F002D52FC /* BlurView.swift */,
+				FAA9C4BC2D56BF3F002D52FC /* CheckButton.swift */,
+				FAA9C4BD2D56BF3F002D52FC /* CustomDatePickerView.swift */,
+				FAA9C4BE2D56BF3F002D52FC /* CustomPageTabView.swift */,
+				FAA9C4BF2D56BF3F002D52FC /* CustomTabBar.swift */,
+				FAA9C4C02D56BF3F002D52FC /* DateVeiw.swift */,
+				FAA9C4C12D56BF3F002D52FC /* NavButton.swift */,
+				FAA9C4C22D56BF3F002D52FC /* ScreenHeaderView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FAA9C4C92D56BF3F002D52FC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4C42D56BF3F002D52FC /* Colors.swift */,
+				FAA9C4C52D56BF3F002D52FC /* Fonts.swift */,
+				FAA9C4C62D56BF3F002D52FC /* Images.swift */,
+				FAA9C4C72D56BF3F002D52FC /* Labels.swift */,
+				FAA9C4C82D56BF3F002D52FC /* Sizes.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAA9C4D02D56BF3F002D52FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4CA2D56BF3F002D52FC /* ClassModel.swift */,
+				FAA9C4CB2D56BF3F002D52FC /* DateValueModel.swift */,
+				FAA9C4CC2D56BF3F002D52FC /* LandmarkModel.swift */,
+				FAA9C4CD2D56BF3F002D52FC /* OfferModel.swift */,
+				FAA9C4CE2D56BF3F002D52FC /* OnboardingModel.swift */,
+				FAA9C4CF2D56BF3F002D52FC /* SportBarModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA9C4D22D56BF3F002D52FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4D12D56BF3F002D52FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAA9C4D72D56BF3F002D52FC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4D32D56BF3F002D52FC /* Poppins-Black.ttf */,
+				FAA9C4D42D56BF3F002D52FC /* Poppins-Light.ttf */,
+				FAA9C4D52D56BF3F002D52FC /* Poppins-Regular.ttf */,
+				FAA9C4D62D56BF3F002D52FC /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FAA9C4D92D56BF3F002D52FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4D72D56BF3F002D52FC /* Fonts */,
+				FAA9C4D82D56BF3F002D52FC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAA9C4DD2D56BF3F002D52FC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4DA2D56BF3F002D52FC /* ClassesDetailView.swift */,
+				FAA9C4DB2D56BF3F002D52FC /* ClassesView.swift */,
+				FAA9C4DC2D56BF3F002D52FC /* ReserveClassView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FAA9C4E12D56BF3F002D52FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4DE2D56BF3F002D52FC /* HomeView.swift */,
+				FAA9C4DF2D56BF3F002D52FC /* HomeViewModel.swift */,
+				FAA9C4E02D56BF3F002D52FC /* OfferDetailScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAA9C4E42D56BF3F002D52FC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4E22D56BF3F002D52FC /* OnboardingView.swift */,
+				FAA9C4E32D56BF3F002D52FC /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FAA9C4E82D56BF3F002D52FC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4E52D56BF3F002D52FC /* AddressView.swift */,
+				FAA9C4E62D56BF3F002D52FC /* AddressViewModel.swift */,
+				FAA9C4E72D56BF3F002D52FC /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FAA9C4EC2D56BF3F002D52FC /* Sportbar */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4E92D56BF3F002D52FC /* SportBarDetail.swift */,
+				FAA9C4EA2D56BF3F002D52FC /* SportbarView.swift */,
+				FAA9C4EB2D56BF3F002D52FC /* SportbarViewModel.swift */,
+			);
+			path = Sportbar;
+			sourceTree = "<group>";
+		};
+		FAA9C4EE2D56BF3F002D52FC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4E42D56BF3F002D52FC /* Onboarding */,
+				FAA9C51D2D56BF92002D52FC /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FAA9C4F12D56BF3F002D52FC /* Plinko */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4B92D56BF3F002D52FC /* App */,
+				FAA9C4D02D56BF3F002D52FC /* Models */,
+				FAA9C4EE2D56BF3F002D52FC /* Screens */,
+				FAA9C4C32D56BF3F002D52FC /* CustomViews */,
+				FAA9C4C92D56BF3F002D52FC /* Helpers */,
+				FAA9C4D92D56BF3F002D52FC /* Resources */,
+				FAA9C4D22D56BF3F002D52FC /* Preview Content */,
+				FAA9C4F02D56BF3F002D52FC /* Info.plist */,
+			);
+			path = Plinko;
+			sourceTree = "<group>";
+		};
+		FAA9C51D2D56BF92002D52FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9C4ED2D56BF3F002D52FC /* MainView.swift */,
+				FAA9C4E12D56BF3F002D52FC /* Home */,
+				FAA9C4DD2D56BF3F002D52FC /* Classes */,
+				FAA9C4EC2D56BF3F002D52FC /* Sportbar */,
+				FAA9C4E82D56BF3F002D52FC /* Profile */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		FABF4C7C2D50A276007AC81F = {
 			isa = PBXGroup;
 			children = (
-				FABF4C872D50A276007AC81F /* Plinko */,
+				FAA9C4F12D56BF3F002D52FC /* Plinko */,
 				FABF4C862D50A276007AC81F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,9 +301,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				FABF4C872D50A276007AC81F /* Plinko */,
 			);
 			name = Plinko;
 			packageProductDependencies = (
@@ -117,6 +350,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA9C4F22D56BF3F002D52FC /* Preview Assets.xcassets in Resources */,
+				FAA9C4F32D56BF3F002D52FC /* Poppins-Black.ttf in Resources */,
+				FAA9C4F42D56BF3F002D52FC /* Poppins-Light.ttf in Resources */,
+				FAA9C4F52D56BF3F002D52FC /* Poppins-Regular.ttf in Resources */,
+				FAA9C4F62D56BF3F002D52FC /* Poppins-SemiBold.ttf in Resources */,
+				FAA9C4F72D56BF3F002D52FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +366,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA9C4F92D56BF3F002D52FC /* PlinkoApp.swift in Sources */,
+				FAA9C4FA2D56BF3F002D52FC /* BackgroundView.swift in Sources */,
+				FAA9C4FB2D56BF3F002D52FC /* BlurView.swift in Sources */,
+				FAA9C4FC2D56BF3F002D52FC /* CheckButton.swift in Sources */,
+				FAA9C4FD2D56BF3F002D52FC /* CustomDatePickerView.swift in Sources */,
+				FAA9C4FE2D56BF3F002D52FC /* CustomPageTabView.swift in Sources */,
+				FAA9C4FF2D56BF3F002D52FC /* CustomTabBar.swift in Sources */,
+				FAA9C5002D56BF3F002D52FC /* DateVeiw.swift in Sources */,
+				FAA9C5012D56BF3F002D52FC /* NavButton.swift in Sources */,
+				FAA9C5022D56BF3F002D52FC /* ScreenHeaderView.swift in Sources */,
+				FAA9C5032D56BF3F002D52FC /* Colors.swift in Sources */,
+				FAA9C5042D56BF3F002D52FC /* Fonts.swift in Sources */,
+				FAA9C5052D56BF3F002D52FC /* Images.swift in Sources */,
+				FAA9C5062D56BF3F002D52FC /* Labels.swift in Sources */,
+				FAA9C5072D56BF3F002D52FC /* Sizes.swift in Sources */,
+				FAA9C5082D56BF3F002D52FC /* ClassModel.swift in Sources */,
+				FAA9C5092D56BF3F002D52FC /* DateValueModel.swift in Sources */,
+				FAA9C50A2D56BF3F002D52FC /* LandmarkModel.swift in Sources */,
+				FAA9C50B2D56BF3F002D52FC /* OfferModel.swift in Sources */,
+				FAA9C50C2D56BF3F002D52FC /* OnboardingModel.swift in Sources */,
+				FAA9C50D2D56BF3F002D52FC /* SportBarModels.swift in Sources */,
+				FAA9C50E2D56BF3F002D52FC /* ClassesDetailView.swift in Sources */,
+				FAA9C50F2D56BF3F002D52FC /* ClassesView.swift in Sources */,
+				FAA9C5102D56BF3F002D52FC /* ReserveClassView.swift in Sources */,
+				FAA9C5112D56BF3F002D52FC /* HomeView.swift in Sources */,
+				FAA9C5122D56BF3F002D52FC /* HomeViewModel.swift in Sources */,
+				FAA9C5132D56BF3F002D52FC /* OfferDetailScreen.swift in Sources */,
+				FAA9C5142D56BF3F002D52FC /* OnboardingView.swift in Sources */,
+				FAA9C5152D56BF3F002D52FC /* OnboardingViewModel.swift in Sources */,
+				FAA9C5162D56BF3F002D52FC /* AddressView.swift in Sources */,
+				FAA9C5172D56BF3F002D52FC /* AddressViewModel.swift in Sources */,
+				FAA9C5182D56BF3F002D52FC /* ProfileView.swift in Sources */,
+				FAA9C5192D56BF3F002D52FC /* SportBarDetail.swift in Sources */,
+				FAA9C51A2D56BF3F002D52FC /* SportbarView.swift in Sources */,
+				FAA9C51B2D56BF3F002D52FC /* SportbarViewModel.swift in Sources */,
+				FAA9C51C2D56BF3F002D52FC /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +550,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexpetrenko.Plinko;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iamiosdeveloper.mybestapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -310,7 +585,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexpetrenko.Plinko;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iamiosdeveloper.mybestapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
