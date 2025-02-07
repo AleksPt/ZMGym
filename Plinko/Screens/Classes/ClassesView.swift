@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct ClassesView: View {
+    @State var yoga: ClassModel? = nil
+    @State var gym: ClassModel? = nil
+    
     var body: some View {
         ZStack {
             BackgroundView()
@@ -11,17 +14,29 @@ struct ClassesView: View {
                     subtitle: AppLabels.Screens.Classes.subtitle
                 )
                 Spacer()
-                PickView(pickType: .yoga) {
-                    
+                
+                NavigationLink {
+                    ClassesDetailView(classModel: $yoga)
+                } label: {
+                    AppImages.yoga.scaledToFit()
                 }
+                
                 Spacer()
-                PickView(pickType: .schedule) {
-                    
+                
+                NavigationLink {
+                    ClassesDetailView(classModel: $yoga)
+                } label: {
+                    AppImages.schedule.scaledToFit()
                 }
+                
                 Spacer()
-                PickView(pickType: .gym) {
-                    
+                
+                NavigationLink {
+                    ClassesDetailView(classModel: $gym)
+                } label: {
+                    AppImages.gym.scaledToFit()
                 }
+                
                 Spacer()
             }
             .padding(.horizontal)
