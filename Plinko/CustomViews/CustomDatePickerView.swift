@@ -1,17 +1,12 @@
 import SwiftUI
 
-struct DateValueModel: Identifiable {
-    let id = UUID()
-    let day: Int
-    let date: Date
-}
-
 struct CustomDatePickerView: View {
-    @Binding var currentDate: Date
-    @State var currentMonth: Int = 0
+    @State private var currentDate = Date()
+    @State private var currentMonth: Int = 0
+    @Binding var selectedDays: [Int]
     
     var body: some View {
-        VStack(spacing: 35) {
+        VStack(spacing: 20) {
             
             let days = ["M", "T", "W", "T", "F", "S", "S"]
             
@@ -19,17 +14,25 @@ struct CustomDatePickerView: View {
                 Button {
                     currentMonth -= 1
                 } label: {
-                    Image(systemName: "chevron.left")
+                    Image(systemName: "arrowtriangle.backward.fill")
+                        .foregroundStyle(.white)
                 }
+                .padding(.trailing)
                 
-                Text(extraDate()[0])
-                Text(extraDate()[1])
+                Group {
+                    Text(extraDate()[0].uppercased())
+                    Text(extraDate()[1])
+                }
+                .font(.custom(AppFonts.poppinsRegular.name, size: 20))
+                .foregroundStyle(.white)
                 
                 Button {
                     currentMonth += 1
                 } label: {
-                    Image(systemName: "chevron.right")
+                    Image(systemName: "arrowtriangle.forward.fill")
+                        .foregroundStyle(.white)
                 }
+                .padding(.leading)
                 
                 Spacer()
             }
@@ -38,10 +41,10 @@ struct CustomDatePickerView: View {
             HStack {
                 ForEach(days, id: \.self) { day in
                     Text(day.uppercased())
-                        .font(.custom(AppFonts.poppinsRegular.name, size: 17.5))
+                        .font(.custom(AppFonts.poppinsRegular.name, size: 20))
                         .foregroundStyle(AppColors.lightGray.color)
-                        .padding(.vertical, 10)
                         .frame(maxWidth: .infinity)
+                        .padding(.vertical, 5)
                 }
             }
             .background(AppColors.black.color)
@@ -49,9 +52,13 @@ struct CustomDatePickerView: View {
             
             let columns = Array(repeating: GridItem(.flexible()), count: 7)
             
-            LazyVGrid(columns: columns, spacing: 15) {
+            LazyVGrid(columns: columns) {
                 ForEach(extractDate()) { value in
-                    CardView(value: value)
+                    Button {
+                        selectedDays.append(value.day)
+                    } label: {
+                        CardView(value: value, selectedDays: selectedDays)
+                    }
                 }
             }
         }
@@ -61,12 +68,24 @@ struct CustomDatePickerView: View {
     }
     
     @ViewBuilder
-    private func CardView(value: DateValueModel) -> some View {
-        if value.day != -1 {
-            Text(value.day.description)
-        } else {
-            Text("")
+    private func CardView(
+        value: DateValueModel,
+        selectedDays: [Int]
+    ) -> some View {
+        VStack {
+            if value.day != -1 {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundStyle(selectedDays.contains(value.day) ? AppColors.sandy.color : .clear)
+                    Text(value.day.description)
+                        .foregroundStyle(selectedDays.contains(value.day) ? .black : .white)
+                }
+            } else {
+                Text("")
+            }
         }
+        .frame(width: 50, height: 50)
+        .font(.custom(AppFonts.poppinsRegular.name, size: 20))
     }
     
     private func extraDate() -> [String] {
@@ -123,20 +142,12 @@ struct CustomDatePickerView: View {
     }
 }
 
-struct CustomCalendarView: View {
-    @State var currentDate = Date()
-    
-    var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            VStack(spacing: 20) {
-                CustomDatePickerView(currentDate: $currentDate)
-            }
-        }
-    }
-}
-
 #Preview {
-    CustomCalendarView()
+    ZStack {
+        BackgroundView()
+        
+        CustomDatePickerView(selectedDays: .constant([7]))
+    }
 }
 
 extension Date {

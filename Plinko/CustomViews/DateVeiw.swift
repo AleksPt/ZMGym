@@ -13,8 +13,8 @@ struct DateVeiw: View {
                     .scaledToFill()
                     .blendMode(.overlay)
                     .rotationEffect(.degrees(5))
-                    .scaleEffect(1.7)
-                    .offset(x: 30, y: -15)
+                    .scaleEffect(1.5)
+                    .offset(x: 30, y: -30)
             )
             .overlay(
                 HStack {
@@ -54,5 +54,8 @@ struct DateVeiw: View {
 }
 
 #Preview {
-    DateVeiw(date: Date())
+    ZStack {
+        AppColors.darkGray.color.ignoresSafeArea()
+        DateVeiw(date: Date())
+    }
 }

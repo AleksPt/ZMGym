@@ -1,5 +1,4 @@
 import SwiftUI
-import BottomSheets
 
 struct SportbarView: View {
     @StateObject private var viewModel = SportbarViewModel()
@@ -41,14 +40,9 @@ struct SportbarView: View {
                                 } label: {
                                     item.smallImage.scaledToFit()
                                 }
-                                .bottomSheet(
-                                    isPresented: $isPresentedBottomSheet,
-                                    [.fraction(0.9)]
-                                ) {
+                                .sheet(isPresented: $isPresentedBottomSheet, content: {
                                     SportBarDetail(sportbarData: selectedFoodItem)
-                                        .bPresentationBackground(Color.black)
-                                        .bPresentationCornerRadius(40)
-                                }
+                                })
                             }
                         }
                         
@@ -71,14 +65,9 @@ struct SportbarView: View {
                                 } label: {
                                     item.smallImage.scaledToFit()
                                 }
-                                .bottomSheet(
-                                    isPresented: $isPresentedBottomSheet,
-                                    [.fraction(0.9)]
-                                ) {
+                                .sheet(isPresented: $isPresentedBottomSheet, content: {
                                     SportBarDetail(sportbarData: selectedFoodItem)
-                                        .bPresentationBackground(Color.black)
-                                        .bPresentationCornerRadius(40)
-                                }
+                                })
                             }
                         }
                     }
