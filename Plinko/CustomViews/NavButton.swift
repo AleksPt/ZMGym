@@ -30,6 +30,7 @@ struct NavButton: View {
                 .clipShape(Capsule())
                 .overlay(
                     Text(title)
+                        .padding(.horizontal)
                         .font(.custom(AppFonts.poppinsSemiBold.name, size: 40))
                         .lineLimit(1)
                         .minimumScaleFactor(0.5)

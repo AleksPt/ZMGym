@@ -7,7 +7,7 @@ struct SplashScreen: View {
         switch splashViewModel.viewState {
         case .loading:
             withAnimation {
-                LoaderView()                
+                LoaderView()
             }
         case .game:
             OnboardingView()

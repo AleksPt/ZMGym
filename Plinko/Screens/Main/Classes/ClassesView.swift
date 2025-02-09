@@ -40,6 +40,7 @@ struct ClassesView: View {
                 Spacer()
             }
             .padding(.horizontal)
+            .padding(.bottom, 30)
         }
     }
 }

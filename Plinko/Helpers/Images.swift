@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum AppImages {
-    static let background = Image(.background).resizable()
+    static let background = Image(.appBackground).resizable()
     static let qr = Image(.qr).resizable()
     static let pattern = Image(.pattern).resizable()
     static let patternYellow = Image(.patternYellow).resizable()

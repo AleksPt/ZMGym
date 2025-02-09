@@ -33,7 +33,8 @@ struct ProfileView: View {
                     isPresentedAddressScreen = true
                 }
             }
-            .padding([.horizontal, .bottom])
+            .padding(.horizontal)
+            .padding(.bottom, 30)
         }
         .fullScreenCover(isPresented: $isPresentedAddressScreen) {
             AddressView()

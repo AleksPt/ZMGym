@@ -16,7 +16,6 @@ struct BackgroundView: View {
             AppImages.background
                 .aspectRatio(contentMode: .fill)
                 .blendMode(.luminosity)
-            
         }
         .ignoresSafeArea()
     }

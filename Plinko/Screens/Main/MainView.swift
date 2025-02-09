@@ -2,27 +2,18 @@ import SwiftUI
 
 struct MainView: View {
     @State private var currentView: Tab = .home
-
+    
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
-            ZStack {
-                BackgroundView()
-                
-                VStack {
-                    switch currentView {
-                    case .home:
-                        HomeView()
-                    case .classes:
-                        ClassesView()
-                    case .sportBar:
-                        SportbarView()
-                    case .profile:
-                        ProfileView()
-                    }
-                                        
-                    CustomTabBar(currentView: $currentView)
-                }
-            }
-            .navigationBarHidden(true)
+        ZStack {
+            BackgroundView()
+            
+            CustomTabBar(currentView: $currentView)
+        }
+        .navigationBarHidden(true)
     }
 }
 

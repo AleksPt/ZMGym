@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum Tab {
+enum Tab: String {
     case home
     case classes
     case sportBar
@@ -24,18 +24,44 @@ struct CustomTabBar: View {
     @Binding var currentView: Tab
     
     var body: some View {
-        HStack {
-            TabBarItem(currentView: self.$currentView, tab: .home)
-            Spacer()
-            TabBarItem(currentView: self.$currentView, tab: .classes)
-            Spacer()
-            TabBarItem(currentView: self.$currentView, tab: .sportBar)
-            Spacer()
-            TabBarItem(currentView: self.$currentView, tab: .profile)
+        ZStack(alignment: .bottom) {
+            TabView(selection: $currentView) {
+                HomeView()
+                    .tag(Tab.home)
+                    .tabItem {
+                        TabBarItem(currentView: $currentView, tab: .home)
+                    }
+                ClassesView()
+                    .tag(Tab.classes)
+                    .tabItem {
+                        TabBarItem(currentView: $currentView, tab: .classes)
+                    }
+                SportbarView()
+                    .tag(Tab.sportBar)
+                    .tabItem {
+                        TabBarItem(currentView: $currentView, tab: .sportBar)
+                    }
+                ProfileView()
+                    .tag(Tab.profile)
+                    .tabItem {
+                        TabBarItem(currentView: $currentView, tab: .profile)
+                    }
+            }
+            .padding(.bottom, 50)
+            
+            HStack {
+                TabBarItem(currentView: $currentView, tab: .home)
+                Spacer()
+                TabBarItem(currentView: $currentView, tab: .classes)
+                Spacer()
+                TabBarItem(currentView: $currentView, tab: .sportBar)
+                Spacer()
+                TabBarItem(currentView: $currentView, tab: .profile)
+            }
+            .clipShape(CustomClippedShape())
+            .padding(.horizontal)
+            .background(BlurView(style: .systemMaterial).ignoresSafeArea())
         }
-        .clipShape(CustomClippedShape())
-        .padding(.horizontal)
-        .background(BlurView(style: .systemMaterial).ignoresSafeArea())
     }
 }
 
@@ -62,7 +88,7 @@ struct TabBarItem: View {
                     .opacity(currentView == tab ? 1 : 0.3)
                     .scaledToFit()
                     .padding(5)
-                    .frame(width: 48, height: 49, alignment: .center)
+                    .frame(height: 50, alignment: .center)
             }
         }
         .fixedSize()
