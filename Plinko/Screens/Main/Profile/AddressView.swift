@@ -9,7 +9,7 @@ struct AddressView: View {
         ZStack {
             BackgroundView()
             
-            VStack {
+            VStack(alignment: .leading) {
                 ScreenHeaderView(
                     title: AppLabels.Screens.Profile.title,
                     subtitle: AppLabels.Screens.Profile.subtitle

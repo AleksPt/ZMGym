@@ -3,7 +3,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     @State private var selectionTab = 0
-    @State private var isPresentedOfferDetailScreen = false
+    @State private var selectedOfferItem: OfferModel?
     var body: some View {
         ZStack {
             BackgroundView()
@@ -18,17 +18,16 @@ struct HomeView: View {
                 Spacer()
                 
                 TabView(selection: $selectionTab) {
-                    ForEach(viewModel.offers.indices, id: \.self) { index in
+                    ForEach(viewModel.offers.indices, id:\.self) { index in
+                        
                         let item = viewModel.offers[index]
                         
-                        item.image
-                            .scaledToFit()
-                            .onTapGesture {
-                                isPresentedOfferDetailScreen = true
-                            }
-                            .fullScreenCover(isPresented: $isPresentedOfferDetailScreen) {
-                                OfferDetailScreen(offer: item)
-                            }
+                        Button {
+                            selectedOfferItem = item
+                        } label: {
+                            item.image
+                                .scaledToFit()
+                        }
                     }
                     .padding(.horizontal)
                 }
@@ -56,6 +55,9 @@ struct HomeView: View {
                 .padding(.horizontal)
             }
             .padding(.bottom, 30)
+            .fullScreenCover(item: $selectedOfferItem, content: { item in
+                OfferDetailScreen(offer: item)
+            })
         }
     }
 }

@@ -6,9 +6,7 @@ struct PlinkoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                SplashScreen()
-            }
+            SplashScreen()
         }
     }
 }

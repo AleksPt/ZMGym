@@ -54,18 +54,19 @@ struct ClassesDetailView: View {
                 })
             }
             .padding(.horizontal)
+            .padding(.bottom, 30)
         }
-        .navigationBarBackButtonHidden(true) // Скрываем стандартную кнопку назад
+        .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button(action: {
                     dismiss()
                 }) {
                     HStack {
-                        Image(systemName: "chevron.left") // Стрелка назад
-                            .foregroundColor(.white) // Установите желаемый цвет
+                        Image(systemName: "chevron.left")
+                            .foregroundColor(.white)
                         Text("Back")
-                            .foregroundColor(.white) // Установите желаемый цвет
+                            .foregroundColor(.white)
                     }
                 }
             }
