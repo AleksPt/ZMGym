@@ -11,6 +11,7 @@
 		FA0EB0032D56CBC0009D83CD /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EB0022D56CBC0009D83CD /* FacebookCore */; };
 		FA0EB0062D56CCD5009D83CD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EB0052D56CCD5009D83CD /* FirebaseDatabase */; };
 		FA0EB0082D56CCD5009D83CD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EB0072D56CCD5009D83CD /* FirebaseMessaging */; };
+		FA6E852D2D58F75100F3CEA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6E852C2D58F75100F3CEA8 /* GoogleService-Info.plist */; };
 		FAA9C4F22D56BF3F002D52FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D12D56BF3F002D52FC /* Preview Assets.xcassets */; };
 		FAA9C4F32D56BF3F002D52FC /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D32D56BF3F002D52FC /* Poppins-Black.ttf */; };
 		FAA9C4F42D56BF3F002D52FC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D42D56BF3F002D52FC /* Poppins-Light.ttf */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA6E852C2D58F75100F3CEA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAA9C4B82D56BF3F002D52FC /* PlinkoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoApp.swift; sourceTree = "<group>"; };
 		FAA9C4BA2D56BF3F002D52FC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		FAA9C4BB2D56BF3F002D52FC /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				FAA9C4D92D56BF3F002D52FC /* Resources */,
 				FAA9C4D22D56BF3F002D52FC /* Preview Content */,
 				FAA9C4F02D56BF3F002D52FC /* Info.plist */,
+				FA6E852C2D58F75100F3CEA8 /* GoogleService-Info.plist */,
 			);
 			path = Plinko;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				FAA9C4F52D56BF3F002D52FC /* Poppins-Regular.ttf in Resources */,
 				FAA9C4F62D56BF3F002D52FC /* Poppins-SemiBold.ttf in Resources */,
 				FAA9C4F72D56BF3F002D52FC /* Assets.xcassets in Resources */,
+				FA6E852D2D58F75100F3CEA8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
