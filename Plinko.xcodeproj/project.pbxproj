@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0EB0002D56C6B6009D83CD /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EAFFF2D56C6B6009D83CD /* AppsFlyerLib-Static */; };
+		FA0EB0032D56CBC0009D83CD /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EB0022D56CBC0009D83CD /* FacebookCore */; };
+		FA0EB0062D56CCD5009D83CD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EB0052D56CCD5009D83CD /* FirebaseDatabase */; };
+		FA0EB0082D56CCD5009D83CD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EB0072D56CCD5009D83CD /* FirebaseMessaging */; };
 		FAA9C4F22D56BF3F002D52FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D12D56BF3F002D52FC /* Preview Assets.xcassets */; };
 		FAA9C4F32D56BF3F002D52FC /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D32D56BF3F002D52FC /* Poppins-Black.ttf */; };
 		FAA9C4F42D56BF3F002D52FC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D42D56BF3F002D52FC /* Poppins-Light.ttf */; };
@@ -103,6 +107,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0EB0082D56CCD5009D83CD /* FirebaseMessaging in Frameworks */,
+				FA0EB0062D56CCD5009D83CD /* FirebaseDatabase in Frameworks */,
+				FA0EB0002D56C6B6009D83CD /* AppsFlyerLib-Static in Frameworks */,
+				FA0EB0032D56CBC0009D83CD /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,10 @@
 			);
 			name = Plinko;
 			packageProductDependencies = (
+				FA0EAFFF2D56C6B6009D83CD /* AppsFlyerLib-Static */,
+				FA0EB0022D56CBC0009D83CD /* FacebookCore */,
+				FA0EB0052D56CCD5009D83CD /* FirebaseDatabase */,
+				FA0EB0072D56CCD5009D83CD /* FirebaseMessaging */,
 			);
 			productName = Plinko;
 			productReference = FABF4C852D50A276007AC81F /* Plinko.app */;
@@ -333,8 +345,10 @@
 				Base,
 			);
 			mainGroup = FABF4C7C2D50A276007AC81F;
-			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				FA0EAFFE2D56C6B6009D83CD /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+				FA0EB0012D56CBC0009D83CD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				FA0EB0042D56CCD5009D83CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = FABF4C862D50A276007AC81F /* Products */;
 			projectDirPath = "";
@@ -542,7 +556,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -577,7 +591,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -619,6 +633,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA0EAFFE2D56C6B6009D83CD /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.16.0;
+			};
+		};
+		FA0EB0012D56CBC0009D83CD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+		FA0EB0042D56CCD5009D83CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA0EAFFF2D56C6B6009D83CD /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA0EAFFE2D56C6B6009D83CD /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+		FA0EB0022D56CBC0009D83CD /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA0EB0012D56CBC0009D83CD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		FA0EB0052D56CCD5009D83CD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA0EB0042D56CCD5009D83CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FA0EB0072D56CCD5009D83CD /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA0EB0042D56CCD5009D83CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FABF4C7D2D50A276007AC81F /* Project object */;
 }
