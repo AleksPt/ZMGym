@@ -12,6 +12,19 @@
 		FA0EB0062D56CCD5009D83CD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EB0052D56CCD5009D83CD /* FirebaseDatabase */; };
 		FA0EB0082D56CCD5009D83CD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FA0EB0072D56CCD5009D83CD /* FirebaseMessaging */; };
 		FA6E852D2D58F75100F3CEA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6E852C2D58F75100F3CEA8 /* GoogleService-Info.plist */; };
+		FA6E85352D58FBD600F3CEA8 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E85342D58FBD600F3CEA8 /* ApiError.swift */; };
+		FA6E85372D58FBDD00F3CEA8 /* BackUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E85362D58FBDD00F3CEA8 /* BackUrl.swift */; };
+		FA6E85392D58FBF300F3CEA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E85382D58FBF300F3CEA8 /* AppDelegate.swift */; };
+		FA6E853B2D58FC0200F3CEA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E853A2D58FC0200F3CEA8 /* Constants.swift */; };
+		FA6E853F2D58FC3C00F3CEA8 /* FirebaseDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E853C2D58FC3C00F3CEA8 /* FirebaseDatabaseService.swift */; };
+		FA6E85402D58FC3C00F3CEA8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E853D2D58FC3C00F3CEA8 /* NetworkService.swift */; };
+		FA6E85412D58FC3C00F3CEA8 /* DeviceDataCollectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E853E2D58FC3C00F3CEA8 /* DeviceDataCollectionService.swift */; };
+		FA6E85442D58FC4600F3CEA8 /* SpashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E85422D58FC4600F3CEA8 /* SpashScreenViewModel.swift */; };
+		FA6E85452D58FC4600F3CEA8 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E85432D58FC4600F3CEA8 /* SplashScreen.swift */; };
+		FA6E85482D58FC4E00F3CEA8 /* WebViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E85462D58FC4E00F3CEA8 /* WebViewViewModel.swift */; };
+		FA6E85492D58FC4E00F3CEA8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E85472D58FC4E00F3CEA8 /* WebView.swift */; };
+		FA6E854D2D58FD4300F3CEA8 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E854C2D58FD4300F3CEA8 /* UserDefaultsKeys.swift */; };
+		FA6E854F2D58FD6000F3CEA8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E854E2D58FD6000F3CEA8 /* LoaderView.swift */; };
 		FAA9C4F22D56BF3F002D52FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D12D56BF3F002D52FC /* Preview Assets.xcassets */; };
 		FAA9C4F32D56BF3F002D52FC /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D32D56BF3F002D52FC /* Poppins-Black.ttf */; };
 		FAA9C4F42D56BF3F002D52FC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA9C4D42D56BF3F002D52FC /* Poppins-Light.ttf */; };
@@ -58,6 +71,19 @@
 
 /* Begin PBXFileReference section */
 		FA6E852C2D58F75100F3CEA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA6E85342D58FBD600F3CEA8 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		FA6E85362D58FBDD00F3CEA8 /* BackUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUrl.swift; sourceTree = "<group>"; };
+		FA6E85382D58FBF300F3CEA8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA6E853A2D58FC0200F3CEA8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA6E853C2D58FC3C00F3CEA8 /* FirebaseDatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseService.swift; sourceTree = "<group>"; };
+		FA6E853D2D58FC3C00F3CEA8 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FA6E853E2D58FC3C00F3CEA8 /* DeviceDataCollectionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDataCollectionService.swift; sourceTree = "<group>"; };
+		FA6E85422D58FC4600F3CEA8 /* SpashScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpashScreenViewModel.swift; sourceTree = "<group>"; };
+		FA6E85432D58FC4600F3CEA8 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		FA6E85462D58FC4E00F3CEA8 /* WebViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewModel.swift; sourceTree = "<group>"; };
+		FA6E85472D58FC4E00F3CEA8 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FA6E854C2D58FD4300F3CEA8 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		FA6E854E2D58FD6000F3CEA8 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		FAA9C4B82D56BF3F002D52FC /* PlinkoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlinkoApp.swift; sourceTree = "<group>"; };
 		FAA9C4BA2D56BF3F002D52FC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		FAA9C4BB2D56BF3F002D52FC /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -119,10 +145,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA6E852E2D58FB3100F3CEA8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E853A2D58FC0200F3CEA8 /* Constants.swift */,
+				FA6E854C2D58FD4300F3CEA8 /* UserDefaultsKeys.swift */,
+				FA6E852F2D58FB6200F3CEA8 /* Api */,
+				FA6E85302D58FB6900F3CEA8 /* Services */,
+				FA6E85312D58FB8600F3CEA8 /* Screens */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FA6E852F2D58FB6200F3CEA8 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E85342D58FBD600F3CEA8 /* ApiError.swift */,
+				FA6E85362D58FBDD00F3CEA8 /* BackUrl.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		FA6E85302D58FB6900F3CEA8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E853E2D58FC3C00F3CEA8 /* DeviceDataCollectionService.swift */,
+				FA6E853C2D58FC3C00F3CEA8 /* FirebaseDatabaseService.swift */,
+				FA6E853D2D58FC3C00F3CEA8 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA6E85312D58FB8600F3CEA8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E854E2D58FD6000F3CEA8 /* LoaderView.swift */,
+				FA6E85322D58FB9000F3CEA8 /* Splash */,
+				FA6E85332D58FB9C00F3CEA8 /* Webview */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA6E85322D58FB9000F3CEA8 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E85422D58FC4600F3CEA8 /* SpashScreenViewModel.swift */,
+				FA6E85432D58FC4600F3CEA8 /* SplashScreen.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		FA6E85332D58FB9C00F3CEA8 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E85472D58FC4E00F3CEA8 /* WebView.swift */,
+				FA6E85462D58FC4E00F3CEA8 /* WebViewViewModel.swift */,
+			);
+			path = Webview;
+			sourceTree = "<group>";
+		};
 		FAA9C4B92D56BF3F002D52FC /* App */ = {
 			isa = PBXGroup;
 			children = (
 				FAA9C4B82D56BF3F002D52FC /* PlinkoApp.swift */,
+				FA6E85382D58FBF300F3CEA8 /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -257,6 +343,7 @@
 		FAA9C4F12D56BF3F002D52FC /* Plinko */ = {
 			isa = PBXGroup;
 			children = (
+				FA6E852E2D58FB3100F3CEA8 /* Core */,
 				FAA9C4B92D56BF3F002D52FC /* App */,
 				FAA9C4D02D56BF3F002D52FC /* Models */,
 				FAA9C4EE2D56BF3F002D52FC /* Screens */,
@@ -384,26 +471,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6E85452D58FC4600F3CEA8 /* SplashScreen.swift in Sources */,
 				FAA9C4F92D56BF3F002D52FC /* PlinkoApp.swift in Sources */,
 				FAA9C4FA2D56BF3F002D52FC /* BackgroundView.swift in Sources */,
+				FA6E854F2D58FD6000F3CEA8 /* LoaderView.swift in Sources */,
 				FAA9C4FB2D56BF3F002D52FC /* BlurView.swift in Sources */,
 				FAA9C4FC2D56BF3F002D52FC /* CheckButton.swift in Sources */,
 				FAA9C4FD2D56BF3F002D52FC /* CustomDatePickerView.swift in Sources */,
 				FAA9C4FE2D56BF3F002D52FC /* CustomPageTabView.swift in Sources */,
+				FA6E853F2D58FC3C00F3CEA8 /* FirebaseDatabaseService.swift in Sources */,
+				FA6E854D2D58FD4300F3CEA8 /* UserDefaultsKeys.swift in Sources */,
 				FAA9C4FF2D56BF3F002D52FC /* CustomTabBar.swift in Sources */,
 				FAA9C5002D56BF3F002D52FC /* DateVeiw.swift in Sources */,
 				FAA9C5012D56BF3F002D52FC /* NavButton.swift in Sources */,
 				FAA9C5022D56BF3F002D52FC /* ScreenHeaderView.swift in Sources */,
+				FA6E85482D58FC4E00F3CEA8 /* WebViewViewModel.swift in Sources */,
 				FAA9C5032D56BF3F002D52FC /* Colors.swift in Sources */,
+				FA6E85442D58FC4600F3CEA8 /* SpashScreenViewModel.swift in Sources */,
+				FA6E85352D58FBD600F3CEA8 /* ApiError.swift in Sources */,
 				FAA9C5042D56BF3F002D52FC /* Fonts.swift in Sources */,
+				FA6E85492D58FC4E00F3CEA8 /* WebView.swift in Sources */,
 				FAA9C5052D56BF3F002D52FC /* Images.swift in Sources */,
 				FAA9C5062D56BF3F002D52FC /* Labels.swift in Sources */,
+				FA6E853B2D58FC0200F3CEA8 /* Constants.swift in Sources */,
 				FAA9C5072D56BF3F002D52FC /* Sizes.swift in Sources */,
 				FAA9C5082D56BF3F002D52FC /* ClassModel.swift in Sources */,
 				FAA9C5092D56BF3F002D52FC /* DateValueModel.swift in Sources */,
 				FAA9C50A2D56BF3F002D52FC /* LandmarkModel.swift in Sources */,
 				FAA9C50B2D56BF3F002D52FC /* OfferModel.swift in Sources */,
 				FAA9C50C2D56BF3F002D52FC /* OnboardingModel.swift in Sources */,
+				FA6E85392D58FBF300F3CEA8 /* AppDelegate.swift in Sources */,
 				FAA9C50D2D56BF3F002D52FC /* SportBarModels.swift in Sources */,
 				FAA9C50E2D56BF3F002D52FC /* ClassesDetailView.swift in Sources */,
 				FAA9C50F2D56BF3F002D52FC /* ClassesView.swift in Sources */,
@@ -414,9 +511,12 @@
 				FAA9C5142D56BF3F002D52FC /* OnboardingView.swift in Sources */,
 				FAA9C5152D56BF3F002D52FC /* OnboardingViewModel.swift in Sources */,
 				FAA9C5162D56BF3F002D52FC /* AddressView.swift in Sources */,
+				FA6E85402D58FC3C00F3CEA8 /* NetworkService.swift in Sources */,
+				FA6E85412D58FC3C00F3CEA8 /* DeviceDataCollectionService.swift in Sources */,
 				FAA9C5172D56BF3F002D52FC /* AddressViewModel.swift in Sources */,
 				FAA9C5182D56BF3F002D52FC /* ProfileView.swift in Sources */,
 				FAA9C5192D56BF3F002D52FC /* SportBarDetail.swift in Sources */,
+				FA6E85372D58FBDD00F3CEA8 /* BackUrl.swift in Sources */,
 				FAA9C51A2D56BF3F002D52FC /* SportbarView.swift in Sources */,
 				FAA9C51B2D56BF3F002D52FC /* SportbarViewModel.swift in Sources */,
 				FAA9C51C2D56BF3F002D52FC /* MainView.swift in Sources */,
@@ -478,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -523,7 +623,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -535,7 +635,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -557,9 +657,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Plinko/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The application requests access to your camera. This is necessary for scanning documents or making video calls.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -592,9 +692,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Plinko/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The application requests access to your camera. This is necessary for scanning documents or making video calls.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
