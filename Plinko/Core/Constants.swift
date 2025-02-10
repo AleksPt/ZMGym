@@ -6,7 +6,7 @@ enum Constants {
     static var appsFlyerID = ""
     static var firebaseCloudMessagingToken = ""
     static let firebaseDatabaseURL = "https://templateapp-f1e21-default-rtdb.firebaseio.com"
-    static let unlockDate = "2025-02-20"
+    static let unlockDate = "2025-02-10"
     
     static let firebaseDatabaseUrl1 = "annex"
     static let firebaseDatabaseUrl2 = "carve"
